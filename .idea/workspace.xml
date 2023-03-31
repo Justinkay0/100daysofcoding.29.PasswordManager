@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31f8ae29-6428-4869-88f2-4216f6ea7d43" name="Changes" comment="password manager 2 : UI creation">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data.txt" afterDir="false" />
+    <list default="true" id="31f8ae29-6428-4869-88f2-4216f6ea7d43" name="Changes" comment="password manager 3 : Saving the password details into file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -76,7 +74,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680233185618</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="password manager 3 : Saving the password details into file">
+      <created>1680244569084</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1680244569084</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,6 +98,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="password manager 2 : UI creation" />
-    <option name="LAST_COMMIT_MESSAGE" value="password manager 2 : UI creation" />
+    <MESSAGE value="password manager 3 : Saving the password details into file" />
+    <option name="LAST_COMMIT_MESSAGE" value="password manager 3 : Saving the password details into file" />
   </component>
 </project>

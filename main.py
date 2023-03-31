@@ -1,14 +1,25 @@
 import tkinter as tk
+from tkinter import messagebox
+
+
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def add_pw():
-    with open(file='data.txt', mode='a') as f:
-        f.write(f"{web_entry.get()} | {username_entry.get()} | {password_entry.get()}\n")
-
-    web_entry.delete(0, tk.END)
-    password_entry.delete(0, tk.END)
+    entry_state = False
+    if len(username_entry.get()) < 1 or len(web_entry.get()) < 1 or len(password_entry.get()) < 1:
+        messagebox.showerror(title='Error in input', message='Please do not leave any fields blank!')
+    else:
+        entry_state = messagebox.askokcancel(title=f'{web_entry.get()}', message=f"These are the details entered \n"
+                                                                             f"Email: {username_entry.get()}\n"
+                                                                             f"Password: {password_entry.get()}\n"
+                                                                             f"Is it ok to save?")
+    if entry_state:
+        with open(file='data.txt', mode='a') as f:
+            f.write(f"{web_entry.get()} | {username_entry.get()} | {password_entry.get()}\n")
+            web_entry.delete(0, tk.END)
+            password_entry.delete(0, tk.END)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -54,4 +65,3 @@ add_button = tk.Button(text='Add', width=36, command=add_pw)
 add_button.grid(row=4, column=1, columnspan=2)
 # mainloop
 window.mainloop()
-
